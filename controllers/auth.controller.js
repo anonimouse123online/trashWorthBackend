@@ -8,7 +8,7 @@ const login = async (req, res, next) => {
 
     const adminCreds = email === 'admin@gmail.com' && password === 'admin123';
     if (adminCreds && process.env.NODE_ENV !== 'production') {
-      const mockUserId = '00000000-0000-0000-0000-000000000001';
+      const mockUserId = '1fd1f526-06a9-4fad-905d-a2be8de16f36';
       const dummyToken = jwt.sign(
         {
           id: mockUserId,
